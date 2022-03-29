@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Coaching Classes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="pop-form" id="myform">
+        <form class="cont" method="post" action="contact.php">
+               <input name="Name" type="text" class="form-control" placeholder="Name" required>
+               <br>
+               <input name="Email" type="email" class="form-control" placeholder="Email" required>
+               <br>
+               <textarea name="Message" type="text" class="form-control" placeholder="Message" row="5" required></textarea>
+               <br>
+               <input type="submit" class="form-control submit" value="Send Message">
+               <input type="button" onclick="closeForm()" class="form-control cancel" value="Cancel">
+           </form>
+    </div>
+    <section id="Home" class="header">
+        <nav>
+            <a class="brand" href="website.html">Coaching Classes</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick = "hidemenu()"></i>
+                <ul>
+                    <li><a href="#Home" onclick="hidemenu()">Home</a></li>
+                    <li><a href="#About" onclick="hidemenu()">About</a></li>
+                    <li><a href="#get" onclick="hidemenu()">Get Quote</a></li>
+                    <li><a href="#Contact" onclick="hidemenu()">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars", onclick = "showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Wisdom Coaching Classes</h1>
+            <p>Education should be easy and fun. Come and learn with our interactive classes</p>
+            <button class="hero-btn" onclick="openForm()">Get Quote</button>
+
+       </div>
+
+        </div>
+    </section>
+    <section id="About"  class="quote">
+       <h2 class="title">About us</h2>
+        <p class="sub-title">We provide a number of classes for different subjects. Objective is to teach in a friendly environment where one can grow their potential.
+        Online classes also available!</p>
+       <p class="sub-title">Featured Classes Available.</p>
+       <div class="row">
+            <div class="Classes">
+                    <h3>10th Class</h3>
+                    <p>Gregor then turned to look out the window at the dull weather. Drops of rain could pane,which made..</p>
+            </div>
+            <div class="Classes">
+                    <h3>12th Class</h3>
+                    <p>Gregor then turned to look out the window at the dull weather. Drops of rain could pane,which made..</p>
+            </div>
+            <div class="Classes">
+                    <h3>B.tech</h3>
+                    <p>Gregor then turned to look out the window at the dull weather. Drops of rain could pane,which made..</p>
+            </div>
+       </div>
+    </section>
+    <section id="get" class="cta">
+        <h1>Enroll For Our Online Classes</br>Anywhere From The World</h1>
+        <button class="simple-btn" onclick="openForm()">GET QUOTE</button>
+    </section>
+    <section id="Contact" class="Cntct">
+		<h2 class="title">Contact us</h2>
+	    <p class="sub-title">Contact us for everything you need..</p>
+        <div class="container">
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2825.211958629328!2d91.83379900000003!3d24.909438007883935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37505558dd0be6a1%3A0x65c7e47c94b6dc45!2sTechnext!5e1!3m2!1sen!2s!4v1425297675833" width="100%" height="354" frameborder="0" style="border:0">
+          </iframe>
+		</div>
+       <div class="contact-form">
+           <form method="post" action="contact.php" method="post">
+               <input name="Name" type="text" class="form-control" placeholder="Name" required>
+               <br>
+               <input name="Email" type="email" class="form-control" placeholder="Email" required>
+               <br>
+               <textarea name="Message" type="text" class="form-control" placeholder="Message" row="5" required></textarea>
+               <br>
+               <input type="submit" class="form-control submit" value="Send Message">
+           </form>
+       </div>
+
+          </div>
+	</section>
+<footer id="foot" class="footer-distributed">
+ 
+ <div class="footer-left">
+ 
+ <h3>Online<span>Classes</span></h3>
+ 
+ <p class="footer-links">
+ <a href="#Home">Home</a>
+ ·
+ <a href="#About">About</a>
+ ·
+ <a href="#foot", onclick="openForm()">Get Quote</a>
+ ·
+ <a href="tel:#YourNumber">Call Now!</a>
+ </p>
+ 
+ <p class="footer-company-name">Lomesh&copy; 2021</p>
+ </div>
+ 
+ <div class="footer-center">
+ 
+ <div>
+ <i class="fa fa-map-marker"></i>
+ <p><span>21 Revolution Street</span> Delhi, India</p>
+ </div>
+ 
+ <div>
+ <i class="fa fa-phone"></i>
+ <p><a href="tel:#YourNumber">+91-YourNumber</a></p>
+ </div>
+ 
+ <div>
+ <i class="fa fa-envelope"></i>
+ <p><a href="mailto: #yourEmail">YourEmail06@gmail.com</a></p>
+ </div>
+ 
+ </div>
+ 
+ <div class="footer-right">
+ 
+ <p class="footer-company-about">
+ <span>About the Classes</span>
+ Our classes provides one of the fastest growing tuition classes for 10th, 12th &amp; B.Tech Class.
+ </p>
+ 
+ <div class="footer-icons">
+ 
+ <a href="#"><i class="fa fa-facebook"></i></a>
+ <a href="#"><i class="fa fa-twitter"></i></a>
+ <a href="#"><i class="fa fa-linkedin"></i></a>
+ <a href="#"><i class="fa fa-github"></i></a>
+ 
+ </div>
+ 
+ </div>
+ 
+ </footer>
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showmenu(){
+        navLinks.style.right = "0";
+    }
+    function hidemenu(){
+    navLinks.style.right = "-250px";
+    }
+
+    function openForm(){
+    document.getElementById('myform').style.display = 'block';
+    }  
+    function closeForm() {
+  document.getElementById("myform").style.display = "none";
+    }
+
+</script>
+</body>
+</html>
